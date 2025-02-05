@@ -43,14 +43,14 @@ Installation Instructions
       streamlit run app.py
       ```
 
-### 5.   Usage Instructions  
+   Usage Instructions  
    -   Mood Selection:   Choose your current mood to get personalized activity suggestions.
    -   Weather Updates:   View weather data for your location and receive clothing suggestions.
    -   Nearby Places:   See nearby places based on your location and selected activities.
    -   Favorites:   Save places to your favorites for future reference.
    -   View Place Details:   Explore more about a place, including reviews and operating hours.
 
-### 6.   API Keys  
+   API Keys  
    - You will need to sign up for API keys from:
      -   OpenWeatherMap   (for weather data)
      -   Google Places API   (for location-based services)
