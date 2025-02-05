@@ -162,7 +162,7 @@ def display_place_card(place, key_suffix):
     with st.container():
         # Show main image from nearby search
         if place.get('photo_url'):
-            st.image(place['photo_url'], use_column_width=True, caption=place['name'])
+            st.image(place['photo_url'], use_container_width=True, caption=place['name'])
         else:
             st.image("https://via.placeholder.com/400x200?text=No+Preview", use_column_width=True)
         
@@ -260,7 +260,7 @@ def display_popular_place(place, key_suffix):
     """Special display function for popular places with image outside card"""
     # Display image outside the container
     if place.get('photo_url'):
-        st.image(place['photo_url'], use_column_width=True, caption=place['name'])
+        st.image(place['photo_url'], use_container_width=True, caption=place['name'])
     else:
         st.image("https://via.placeholder.com/400x200?text=No+Preview", use_column_width=True)
     
