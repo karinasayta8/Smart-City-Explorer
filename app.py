@@ -164,7 +164,7 @@ def display_place_card(place, key_suffix):
         if place.get('photo_url'):
             st.image(place['photo_url'], use_container_width=True, caption=place['name'])
         else:
-            st.image("https://via.placeholder.com/400x200?text=No+Preview", use_column_width=True)
+            st.image("https://via.placeholder.com/400x200?text=No+Preview", use_container_width=True)
         
         st.subheader(place['name'])
         st.caption(f"⭐ {place['rating']} | 📍 {place['distance']:.1f} km | 📝 {place['review_count']} reviews")
@@ -185,7 +185,7 @@ def display_place_card(place, key_suffix):
             if details.get('photos'):
                 cols = st.columns(3)
                 for i, img in enumerate(details['photos'][:3]):
-                    cols[i].image(img, use_column_width=True)
+                    cols[i].image(img, use_container_width=True)
             
             # Display detailed information
             st.markdown(f"**Address:** {details['full_address']}")
@@ -262,7 +262,7 @@ def display_popular_place(place, key_suffix):
     if place.get('photo_url'):
         st.image(place['photo_url'], use_container_width=True, caption=place['name'])
     else:
-        st.image("https://via.placeholder.com/400x200?text=No+Preview", use_column_width=True)
+        st.image("https://via.placeholder.com/400x200?text=No+Preview", use_container_width=True)
     
     # Card container
     with st.container():
@@ -283,7 +283,7 @@ def display_popular_place(place, key_suffix):
             if details.get('photos'):
                 cols = st.columns(3)
                 for i, img in enumerate(details['photos'][:3]):
-                    cols[i].image(img, use_column_width=True)
+                    cols[i].image(img, use_container_width=True)
             
             st.markdown(f"**Address:** {details['full_address']}")
             if details['website'] != "N/A":
